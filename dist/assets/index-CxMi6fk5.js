@@ -96,8 +96,8 @@ Error generating stack: `+o.message+`
 `,vi=le(HC)`
   color: white;
   text-decoration: none;
-  margin-left: 1.5rem; // Increased margin
-  font-size: 1.2rem; // Increased font size
+  margin-left: 1rem; // Increased margin
+  font-size: 1rem; // Increased font size
   font-weight: 600; // Made text bolder
   padding: 0.5rem 1rem; // Added padding to make buttons bigger
   border-radius: 4px; // Optional: rounded corners for button-like appearance
@@ -109,7 +109,7 @@ Error generating stack: `+o.message+`
 `,tE=le(vi)`
   font-size: 1.5rem; // Even larger font for the brand name
   margin-left: 0;
-`;function nE(){const{currentUser:e,logout:t}=go(),n=()=>e&&e.role==="admin";return K.jsx(JP,{children:K.jsxs(eE,{children:[K.jsx("div",{children:K.jsx(tE,{to:"/",children:"EZPass Analyzer"})}),K.jsxs("div",{children:[e?K.jsxs(K.Fragment,{children:[K.jsx(vi,{to:"/saved-results",children:"Saved Results"}),K.jsx(vi,{to:"/",onClick:t,children:"Logout"})]}):K.jsxs(K.Fragment,{children:[K.jsx(vi,{to:"/login",children:"Login"}),K.jsx(vi,{to:"/signup",children:"Sign Up"})]}),n()&&K.jsx(vi,{to:"/admin",children:"Admin"})]})]})})}const rE=le.div`
+`;function nE(){const{currentUser:e,logout:t}=go(),n=()=>e&&e.role==="admin";return K.jsx(JP,{children:K.jsxs(eE,{children:[K.jsx("div",{children:K.jsx(tE,{to:"/",children:"EZPass Analyzer"})}),K.jsxs("div",{children:[e?K.jsxs(K.Fragment,{children:[K.jsx(vi,{to:"/saved-results",children:"Saved Results"}),K.jsx(vi,{to:"/",onClick:t,children:"Logout"})]}):K.jsxs(K.Fragment,{children:[K.jsx(vi,{to:"/login",children:"Login"}),K.jsx(vi,{to:"/signup",children:"Signup"})]}),n()&&K.jsx(vi,{to:"/admin",children:"Admin"})]})]})})}const rE=le.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
