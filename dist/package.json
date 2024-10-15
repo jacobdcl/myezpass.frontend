@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "prebuild": "npm install",
+    "build": "vite build && npm run copy-files",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "copy-files": "copyfiles -f package.json package-lock.json dist"
   },
   "dependencies": {
     "chart.js": "^4.4.4",
@@ -32,6 +34,7 @@
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.2",
     "@vitejs/plugin-react-swc": "^3.5.0",
+    "copyfiles": "^2.4.1",
     "eslint": "^9.11.1",
     "eslint-plugin-react": "^7.37.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
